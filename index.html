@@ -1,63 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ChatGPT Demo</title>
-	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.8.0/dist/tf.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/gpt-2@2.0.0/dist/browser/index.js"></script>
-	<style>
-		.chat-container {
-			width: 400px;
-			height: 500px;
-			border: 1px solid #ccc;
-			padding: 10px;
-			overflow-y: scroll;
-		}
-		.chat-input {
-			width: 100%;
-			height: 30px;
-			border: 1px solid #ccc;
-			padding: 5px;
-			margin-top: 10px;
-		}
-		.chat-btn {
-			width: 100%;
-			height: 30px;
-			background-color: #007bff;
-			color: #fff;
-			border: none;
-			margin-top: 10px;
-			cursor: pointer;
-		}
-	</style>
+	<title>Jasn blog</title>
 </head>
 <body>
-	<div class="chat-container">
-		<div id="chat-log"></div>
-	</div>
-	<input type="text" id="chat-input" class="chat-input" placeholder="请输入您的问题">
-	<button id="chat-btn" class="chat-btn">发送</button>
-	<script>
-		const model = await tf.loadGraphModel('https://storage.googleapis.com/tfjs-models/tfjs/gpt2/medium/model.json');
-		const tokenizer = await createTokenizerFromUrl('https://storage.googleapis.com/tfjs-models/tfjs/gpt2/medium/vocab.json', 'https://storage.googleapis.com/tfjs-models/tfjs/gpt2/medium/merges.json');
-		const chatLog = document.getElementById('chat-log');
-		const chatInput = document.getElementById('chat-input');
-		const chatBtn = document.getElementById('chat-btn');
-		chatBtn.addEventListener('click', async () => {
-			const inputText = chatInput.value;
-			if (inputText.trim() === '') {
-				return;
-			}
-			const encodedText = tokenizer.encode(inputText);
-			const inputTensor = tf.tensor(encodedText, [1, encodedText.length], 'int32');
-			const outputTensor = await model.executeAsync(inputTensor);
-			const output = outputTensor.arraySync()[0];
-			const decodedOutput = tokenizer.decode(output);
-			const chatItem = document.createElement('div');
-			chatItem.innerText = `你：${inputText}\nChatGPT：${decodedOutput}`;
-			chatLog.appendChild(chatItem);
-			chatInput.value = '';
-			chatLog.scrollTop = chatLog.scrollHeight;
-		});
-	</script>
+	<h1>jason blog building....</h1>
 </body>
 </html>
