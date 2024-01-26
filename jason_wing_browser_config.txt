@@ -1,1 +1,1 @@
-{"versionCode":106, "versionFileUrl":"","versionTips":"新版本说明","isOpenAD":1,"forceHomePage":"https://woshiliyihang.github.io/","isCloseOtherSource":0,"api_host_url_key_name":""}
+{"versionCode":106, "versionFileUrl":"","versionTips":"","isOpenAD":1,"forceHomePage":"","isCloseOtherSource":0,"api_host_url_key_name":""}
