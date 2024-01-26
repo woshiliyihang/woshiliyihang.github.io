@@ -1,1 +1,1 @@
-{"versionCode":108, "versionFileUrl":"https://haokanupdate.cdn.bcebos.com/haokanapk/apk/baiduhaokan1022341c.apk","versionTips":"浏览器108版本：1、呢修复问题。2、增加视频对话功能。","isOpenAD":1,"forceHomePage":"https://woshiliyihang.github.io/","isCloseOtherSource":1,"api_host_url_key_name":""}
+{"versionCode":108, "versionFileUrl":"https://woshiliyihang.github.io/baiduhaokan1022341c.apk","versionTips":"浏览器108版本：1、呢修复问题。2、增加视频对话功能。","isOpenAD":1,"forceHomePage":"https://woshiliyihang.github.io/","isCloseOtherSource":1,"api_host_url_key_name":""}
