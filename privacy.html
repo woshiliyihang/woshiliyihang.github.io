@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策与用户协议 · 同传翻译官</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1c1c1e; --muted: #6b6b70; --line: #e3e3e6; --accent: #2f6fed; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f2f2f5; --muted: #a0a0a8; --line: #3a3a40; --accent: #7aa5ff; } }
+  body { margin: 0; font: 16px/1.75 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+         color: var(--fg); background: #fff; }
+  @media (prefers-color-scheme: dark) { body { background: #141417; } }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  h2 { font-size: 19px; margin: 36px 0 12px; padding-top: 20px; border-top: 1px solid var(--line); }
+  p { margin: 0 0 14px; }
+  p b { color: var(--accent); font-weight: 600; }
+  a { color: var(--accent); }
+  .lang { display: inline-flex; gap: 8px; margin-bottom: 20px; }
+  .lang button { font: inherit; font-size: 14px; padding: 6px 14px; border: 1px solid var(--line);
+                 border-radius: 999px; background: transparent; color: var(--muted); cursor: pointer; }
+  .lang button[aria-pressed="true"] { color: #fff; background: var(--accent); border-color: var(--accent); }
+  [data-lang="en"] { display: none; }
+  html[lang^="en"] [data-lang="en"] { display: block; }
+  html[lang^="en"] [data-lang="zh"] { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <!-- 下面四段正文由 tools/gen_privacy_html.py 从 :app 的 privacy_sections /
+       agreement_sections 生成（与 App 内政策页同一份文本），不要手改；
+       改文案请改 app/src/main/res/values*/strings.xml 再跑一次该脚本。 -->
+  <div class="lang">
+    <button type="button" data-set="zh-CN" aria-pressed="true">中文</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+
+  <h1 data-lang="zh">隐私政策与用户协议</h1>
+  <h1 data-lang="en">Privacy Policy and Terms of Use</h1>
+  <div class="meta">
+    <span data-lang="zh">同传翻译官（com.tongsheng.trans）· 生效日期：2026 年 10 月 28 日</span>
+    <span data-lang="en">同传翻译官 (com.tongsheng.trans) · Effective 2026-10-28</span>
+  </div>
+
+  <h2 data-lang="zh">一、隐私政策</h2>
+  <h2 data-lang="en">1. Privacy Policy</h2>  <div data-lang="zh">
+    <p><b>【适用范围】</b> 本政策适用于「同传翻译官」应用（包名 com.tongsheng.trans）及其商店页面。</p>
+    <p><b>【全部在本地处理】</b> 语音识别、文本翻译与拍照取词翻译全部在手机本地完成：您的录音、您取景拍摄的画面、识别出的文字与译文都不会被上传，无需注册账号，我们也不收集、不存储、不出售任何可识别个人信息。</p>
+    <p><b>【麦克风权限】</b> 仅在您点击「开始翻译」或按住说话时用于采集语音以做本地识别，采集到的音频只在内存中即时处理，不做保存、不用于其他目的。您可在系统设置中随时关闭该权限，关闭后仅无法使用语音翻译，不影响其他部分。</p>
+    <p><b>【相机权限】</b> 仅用于拍照翻译：取景期间相机才被激活，画面直接交给手机内的文字识别模型。照片不写入您的相册、不落盘、也不上传。关闭该权限仅使拍照翻译不可用。</p>
+    <p><b>【通知权限】</b> 用于在翻译运行期间显示前台服务通知（Android 13 及以上），可随时关闭。</p>
+    <p><b>【联网情况】</b> 本应用没有自己的服务器。它申请 INTERNET 权限，只是为了让界面与运行在同一应用内的翻译引擎（只监听本机回环地址 127.0.0.1）通信；该端口不对外部设备或网络开放。您的语音、照片、识别出的文字与译文都不会被传出，飞行模式下全部功能照常工作。唯一的例外见下一条。</p>
+    <p><b>【拍照文字识别组件】</b> 本应用内置的文字识别库（Google ML Kit 端侧版本）在手机内部读取照片，不会把照片交给我们或任何人。与其他基础库一样，它可能向发布者上报匿名技术诊断信息——设备型号、系统与应用版本、模型版本、错误码与耗时——用于崩溃定位与日常维护。这些上报不含照片、不含识别出的文字、不含语音，也不含译文；手机离线时不会发生。</p>
+    <p><b>【本地存储】</b> 应用会在本机私有目录保存内置的语音识别、翻译与文字识别模型文件，以及您的语言方向、播报与增益、拍照翻译目标语言等偏好设置；这些数据仅存在于本设备，不上传云端。卸载或清除应用数据即彻底删除。</p>
+    <p><b>【第三方 SDK】</b> 本应用不集成任何第三方统计、广告或跟踪 SDK；语音、翻译与文字识别模型都随应用打包并在本机运行（详见「开源许可」）。</p>
+    <p><b>【未成年人】</b> 本应用不面向儿童，也不会故意收集未成年人的个人信息。</p>
+    <p><b>【您的选择】</b> 您可随时收回本应用对您数据的访问：撤销麦克风或相机权限，或清除应用数据。由于不设账号、不保留您的内容副本，我们这边没有可删除的数据；如仍有疑问，请联系下方邮箱。</p>
+    <p><b>【政策更新】</b> 如功能变更影响本政策，我们会在应用内更新文本、重新发布网页版，并再次征得您的同意。</p>
+    <p><b>【联系方式】</b>邮箱：<a href="mailto:mhhyoucom188@gmail.com">mhhyoucom188@gmail.com</a>。</p>
+  </div>  <div data-lang="en">
+    <p><b>[Scope]</b> This policy applies to the 同传翻译官 application (package name com.tongsheng.trans) and its store listing.</p>
+    <p><b>[Everything stays on your phone]</b> Speech recognition, text translation and photo text translation all run locally on your phone. Your voice, the pictures you frame, the text they contain and the translations are never uploaded; no account is required, and we do not collect, store, or sell any personally identifiable information.</p>
+    <p><b>[Microphone permission]</b> Used only to capture speech for local recognition when you tap "Start translating" or hold to talk. Captured audio is processed in memory immediately — it is never saved or used for any other purpose. You can revoke this permission in system settings at any time; doing so only disables speech translation and affects nothing else.</p>
+    <p><b>[Camera permission]</b> Used only for photo translation: the camera is active while you frame a sign, menu, or document, and the picture is handed straight to the text-recognition model running on your device. Photos are not saved to your gallery, are not written to disk, and are never uploaded. Revoking this permission only disables photo translation.</p>
+    <p><b>[Notification permission]</b> Used to show the foreground-service notification while translation runs (Android 13 and above). Can be turned off at any time.</p>
+    <p><b>[Network use]</b> This app has no server of its own. It asks for the INTERNET permission only so that its screens can talk to the translation engine running inside the same app on the loopback address 127.0.0.1, which listens on that address alone and cannot be reached from other devices or networks. Your voice, your photos, the recognized text and the translations are never transmitted, and every feature keeps working in airplane mode. The one exception is the component described in the next item.</p>
+    <p><b>[Photo text recognition component]</b> The text-recognition library bundled in this app (Google ML Kit, on-device build) reads the picture inside the phone and never hands it to us or to anyone else. Like any library, it can report anonymous technical diagnostics to its publisher — device model, Android and app version, model version, error codes and timings — for crash reporting and maintenance. Those reports contain no photo, no recognized text, no audio and no translation, and nothing is sent while the phone is offline.</p>
+    <p><b>[Local storage]</b> The app stores the built-in speech, translation, and text-recognition model files, plus your preferences such as language direction, playback, gain, and the target language for photo translation, in its private directory on this device. This data exists only on the device and is never uploaded. Uninstalling the app or clearing its data deletes it completely.</p>
+    <p><b>[Third-party SDKs]</b> This app integrates no third-party analytics, advertising, or tracking SDKs. The speech, translation, and text-recognition models are packaged inside the app itself and run locally (see Open-source licenses).</p>
+    <p><b>[Minors]</b> This app is not intended for children, and it does not knowingly collect personal information from minors.</p>
+    <p><b>[Your choices]</b> You can cut off access to your data at any time: revoke the microphone or camera permission, or clear the app data. Because there is no account and we hold no copy of your content, there is nothing of yours on our side to delete; if you still have a question, write to the contact address below.</p>
+    <p><b>[Policy updates]</b> If a feature change affects this policy, we update the text inside the app, republish the web version, and ask for your consent again.</p>
+    <p><b>[Contact]</b> Email: <a href="mailto:mhhyoucom188@gmail.com">mhhyoucom188@gmail.com</a>.</p>
+  </div>
+
+  <h2 data-lang="zh">二、用户协议</h2>
+  <h2 data-lang="en">2. Terms of Use</h2>  <div data-lang="zh">
+    <p><b>【服务说明】</b> 「同传翻译官」提供基于本地模型的实时语音识别与翻译、双向「按住说话」对话翻译，以及拍照取词翻译；以上功能均无需联网即可使用。</p>
+    <p><b>【使用限制】</b> 您应遵守适用法律，不得将本应用用于任何违法用途，不得借助翻译结果制作或传播违法内容，也不得干扰、破坏或逆向工程本应用及其模型。</p>
+    <p><b>【免责说明】</b> 译文与识别文字由机器学习模型自动生成，仅供参考，可能存在错译、漏译、失实或延迟；拍照翻译在画面模糊、倾斜、光线不足或字体花哨时误差更明显。请勿在医疗、法律、金融、安全等对准确性有严格要求的关键场景单独依赖本应用的结果。因使用本应用产生的风险由用户自行承担。</p>
+    <p><b>【拍摄内容】</b> 请只拍摄您有权拍摄的内容，不要借拍照翻译侵犯他人的隐私、商业秘密或著作权。画面不离开您的手机，本应用无从知道您拍摄了什么，拍摄对象与结果用途的责任由您承担。</p>
+    <p><b>【设备兼容】</b> 本应用仅支持部分 arm64 安卓设备，且识别效果受设备麦克风、摄像头、环境与说话音量影响，不保证在所有场景下均可用。</p>
+    <p><b>【协议变更】</b> 我们可能在版本更新时调整本协议，继续使用即表示接受更新后的协议。</p>
+    <p><b>【知识产权】</b> 本应用及其内置模型、界面设计的权利归相应权利人所有，模型按各自的开源许可证（见「开源许可」）分发。</p>
+  </div>  <div data-lang="en">
+    <p><b>[Service description]</b> 同传翻译官 provides real-time speech recognition and translation, two-way hold-to-talk conversation translation, and photo text translation, all based on models bundled with the app. Every one of these features works without a network connection.</p>
+    <p><b>[Use restrictions]</b> Comply with applicable law, do not use this app for any unlawful purpose, do not use translation results to create or spread unlawful content, and do not interfere with, damage, or reverse-engineer this app or its models.</p>
+    <p><b>[Disclaimer]</b> Translations and recognized text are generated automatically by machine-learning models, are provided for reference only, and may contain mistranslations, omissions, inaccuracies, or delays; in photo translation the error is larger when the picture is blurry, tilted, poorly lit, or set in a decorative typeface. Do not rely on the results of this app alone in critical scenarios with strict accuracy requirements, such as medical, legal, financial, or safety matters. Risk arising from use of this app is borne by the user.</p>
+    <p><b>[What you photograph]</b> Photograph only material you are entitled to capture, and do not use photo translation to infringe the privacy of others, trade secrets, or copyright. The picture never leaves your phone, so this app cannot know what you pointed the camera at; responsibility for the subject and for how the result is used rests with you.</p>
+    <p><b>[Device compatibility]</b> This app supports only certain arm64 Android devices, and recognition quality is affected by the microphone and camera of your device, the environment, and your speaking volume; availability in all scenarios is not guaranteed.</p>
+    <p><b>[Agreement changes]</b> We may adjust this agreement during version updates; continued use constitutes acceptance of the updated agreement.</p>
+    <p><b>[Intellectual property]</b> Rights in this app, its built-in models, and its interface design belong to their respective owners; models are distributed under their own open-source licenses (see Open-source licenses).</p>
+  </div>
+</main>
+<script>
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.documentElement.lang = b.dataset.set;
+      document.querySelectorAll('.lang button').forEach(function (o) {
+        o.setAttribute('aria-pressed', String(o === b));
+      });
+    });
+  });
+</script>
+</body>
+</html>
